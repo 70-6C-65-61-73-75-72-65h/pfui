@@ -1,3 +1,14 @@
 @mixin transHover {
   transition: all 0.2s ease 0s;
+  @media (min-width: 992px) {
+    &:hover {
+      @content;
+      cursor: pointer;
+    }
+  }
+}
+
+@mixin fullHeight {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 }

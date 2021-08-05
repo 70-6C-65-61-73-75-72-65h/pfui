@@ -1,0 +1,36 @@
+.featured-works {
+  &__container {
+  }
+
+  &__pic {
+    flex: 1 1 246px;
+    height: 180px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 44 / 30 * 100%;
+  }
+  &__year {
+    color: #ffffff;
+    background: #142850;
+    border-radius: 16px;
+
+    font-size: 18px;
+    line-height: 25 / 18 * 100%;
+  }
+  &__type {
+    font-size: 20px;
+    line-height: 29 / 20 * 100%;
+    color: #8695a4;
+  }
+  &__text {
+  }
+}

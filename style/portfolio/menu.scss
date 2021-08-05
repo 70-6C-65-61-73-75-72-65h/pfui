@@ -19,11 +19,8 @@
 
     color: #000000;
 
-    @include transHover;
-    @media (min-width: $md2+px) {
-      &:hover {
-        color: #ff6464;
-      }
+    @include transHover {
+      color: #a52121;
     }
   }
 }
