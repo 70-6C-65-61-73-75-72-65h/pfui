@@ -1,0 +1,26 @@
+.btn {
+  background: #ff6464;
+  border-radius: 2px;
+  height: 47px;
+
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 29 / 20 * 100%;
+
+  display: inline-flex; // чтобы не на всю ширину
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 0 20px;
+  color: #fff;
+  @include transHover;
+  @media (min-width: 992px) {
+    &:hover {
+      background: #a52121;
+      cursor: pointer;
+    }
+  }
+}

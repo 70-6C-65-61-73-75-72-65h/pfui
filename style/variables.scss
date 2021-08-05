@@ -1,0 +1,21 @@
+:root {
+    --font-body: 'Heebo'; 
+    // --maxWidthContainer: 856;
+// // чтобы немного ранее сработал
+// --md1: calc(var(--maxWidthContainer) + 12);
+// --md2: 991.98;
+// --md3: 767.98;
+// --md4: 479.98;
+}
+
+$fontFamily: var(--font-body);
+
+// $minWidth: 320px;
+// // для работы адаптивного шрифта. адаптивных свойств
+// $maxWidth: 1152;
+$maxWidthContainer: 856;
+// // чтобы немного ранее сработал
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;

@@ -1,0 +1,66 @@
+@import "reset.scss";
+@import "fonts.scss";
+@import "icons.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "./portfolio/**/*.scss";
+
+body {
+  font-family: $fontFamily;
+  max-width: 1152px;
+}
+
+.wrapper {
+  width: 100%;
+
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  box-sizing: border-box;
+  padding: 0 148px;
+}
+
+@media (max-width: 1151px) {
+  .page {
+    padding: 0 12.8%;
+  }
+}
+
+// ._container {
+//   max-width: $maxWidthContainer + px;
+// }
+// @media (max-width: 991.98) {
+//   ._container {
+//     max-width: 970px;
+//   }
+// }
+// @media (max-width: 767.98) {
+//   ._container {
+//     max-width: 750px;
+//   }
+// }
+// @media (max-width: 479.98) {
+//   ._container {
+//     max-width: none;
+//   }
+// }
+
+// ._container {
+//   max-width: $maxWidthContainer + px;
+//   margin: 0px;
+//   @media (max-width: $md1+px) {
+//     max-width: 970px;
+//   }
+//   @media (max-width: $md2+px) {
+//     max-width: 750px;
+//   }
+//   @media (max-width: $md3+px) {
+//     max-width: none;
+//     padding: 0 10px;
+//   }
+// }

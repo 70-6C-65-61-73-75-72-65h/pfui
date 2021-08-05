@@ -1,0 +1,26 @@
+.hello {
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__content {
+  }
+
+  &__title {
+  }
+  &__text {
+  }
+  &__btn {
+  }
+
+  &__avatar {
+    flex: 0 0 243px;
+    height: 243px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+    }
+  }
+}
