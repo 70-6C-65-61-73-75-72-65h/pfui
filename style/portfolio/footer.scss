@@ -1,0 +1,27 @@
+.footer {
+  &__container {
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__resources {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 232px;
+    // flex: 0 0 232px;
+  }
+
+  &__copyrights {
+    margin-top: 26px;
+  }
+
+  &__resource {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

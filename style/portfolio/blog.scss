@@ -1,9 +1,39 @@
 .blog {
   &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 108px 0px 70px;
   }
-  &__title {
+  &__header {
     font-weight: 700px;
+    margin-bottom: 54px;
+
+    @media (max-width: $md3+px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__article {
+    @include info-block;
+
+    //  flex: 1 1 auto;
   }
   //   &__container {
   //   }
+}
+
+.article {
+  padding: 0px !important;
+  box-shadow: none !important;
+  border: none !important;
+  // in info
+  &__topic {
+    color: #8695a4;
+  }
+
+  &__title {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    line-height: 44 / 30 * 100% !important;
+  }
 }

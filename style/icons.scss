@@ -36,13 +36,17 @@
 
 ._icon-fb:before {
   content: "\e900";
+  font-size: var(--icon-font-size);
 }
 ._icon-insta:before {
   content: "\e901";
+  font-size: var(--icon-font-size);
 }
 ._icon-linkedin:before {
   content: "\e902";
+  font-size: var(--icon-font-size);
 }
 ._icon-twitter:before {
   content: "\e903";
+  font-size: var(--icon-font-size);
 }
