@@ -22,5 +22,9 @@
     @include transHover {
       color: #a52121;
     }
+
+    &.active {
+      color: #a52121;
+    }
   }
 }

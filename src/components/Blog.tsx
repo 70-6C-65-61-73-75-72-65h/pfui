@@ -5,67 +5,67 @@ interface Props {}
 
 export default function Blog({}: Props): ReactElement {
   return (
-    <main className="page">
-      <section className="blog">
-        <div className="blog__container _container-blog">
-          <Title className="blog__header">Blog</Title>
-          <div className="blog__content">
-            <article className="blog__article">
-              <RecentPost
-                className={"article"}
-                titleCN={"article__title"}
-                topicCN={"article__topic"}
-                title={"Making a design system from scratch"}
-                info={{ date: "12 Feb 2020", topic: "Design, Pattern" }}
-              >
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </RecentPost>
-            </article>
-            <article className="blog__article">
-              <RecentPost
-                className={"article"}
-                titleCN={"article__title"}
-                topicCN={"article__topic"}
-                title={"Making a design system from scratch"}
-                info={{ date: "12 Feb 2020", topic: "Design, Pattern" }}
-              >
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </RecentPost>
-            </article>
-            <article className="blog__article">
-              <RecentPost
-                className={"article"}
-                titleCN={"article__title"}
-                topicCN={"article__topic"}
-                title={"Making a design system from scratch"}
-                info={{ date: "12 Feb 2020", topic: "Design, Pattern" }}
-              >
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </RecentPost>
-            </article>
-            <article className="blog__article">
-              <RecentPost
-                className={"article"}
-                titleCN={"article__title"}
-                topicCN={"article__topic"}
-                title={"Making a design system from scratch"}
-                info={{ date: "12 Feb 2020", topic: "Design, Pattern" }}
-              >
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </RecentPost>
-            </article>
-          </div>
+    <section className="blog">
+      <div className="blog__container _container-blog">
+        <Title className="blog__header" h1>
+          Blog
+        </Title>
+        <div className="blog__content">
+          <article className="blog__article">
+            <RecentPost
+              className={"article"}
+              titleCN={"article__title"}
+              topicCN={"article__topic"}
+              title={"Making a design system from scratch"}
+              info={{ date: "12 Feb 2020", topic: "Design, Pattern" }}
+            >
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </RecentPost>
+          </article>
+          <article className="blog__article">
+            <RecentPost
+              className={"article"}
+              titleCN={"article__title"}
+              topicCN={"article__topic"}
+              title={"Making a design system from scratch"}
+              info={{ date: "12 Feb 2020", topic: "Design, Pattern" }}
+            >
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </RecentPost>
+          </article>
+          <article className="blog__article">
+            <RecentPost
+              className={"article"}
+              titleCN={"article__title"}
+              topicCN={"article__topic"}
+              title={"Making a design system from scratch"}
+              info={{ date: "12 Feb 2020", topic: "Design, Pattern" }}
+            >
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </RecentPost>
+          </article>
+          <article className="blog__article">
+            <RecentPost
+              className={"article"}
+              titleCN={"article__title"}
+              topicCN={"article__topic"}
+              title={"Making a design system from scratch"}
+              info={{ date: "12 Feb 2020", topic: "Design, Pattern" }}
+            >
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </RecentPost>
+          </article>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
 //  export function Hello() {

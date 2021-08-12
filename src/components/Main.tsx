@@ -1,5 +1,5 @@
 import classNames from "@src/utils/classNames";
-import React, { ReactElement } from "react";
+import React, { MouseEventHandler, ReactElement } from "react";
 import avatar from "@static/images/avatar.png";
 import FW1 from "@static/images/FW1.svg";
 import FW2 from "@static/images/FW2.svg";
@@ -7,12 +7,26 @@ import FW3 from "@static/images/FW3.svg";
 import { useMediaQuery } from "@src/hooks/useMediaQuery";
 interface Props {}
 
-export function Title({ children, className, h1 = false }) {
+export function Title({
+  className,
+  children,
+  h1 = false,
+}: {
+  className: string;
+  children?: any;
+  h1?: boolean;
+}) {
   if (h1)
     return <h1 className={classNames(["title", className])}>{children}</h1>;
   return <div className={classNames(["title", className])}>{children}</div>;
 }
-export function Text({ children, className }) {
+export function Text({
+  children,
+  className,
+}: {
+  children: any;
+  className?: string;
+}) {
   return <div className={classNames(["text", className])}>{children}</div>;
 }
 export function Button({ children, className }) {
@@ -105,10 +119,21 @@ export function Hello() {
     </section>
   );
 }
-export function FeaturedWork({ className, pic, title, year, type, children }) {
+export function FeaturedWork({
+  className,
+  pic,
+  title,
+  year,
+  type,
+  children,
+  onClick,
+}: {
+  [index: string]: any;
+  onClick?: MouseEventHandler<HTMLDivElement>;
+}) {
   const isTablet = useMediaQuery("(max-width: 767.98px)");
   return (
-    <div className={classNames(["featured-work", className])}>
+    <div className={classNames(["featured-work", className])} onClick={onClick}>
       <div className="featured-work__pic">
         {isTablet ? (
           <img src={pic} alt="FeaturedWork" height="230px" width="344px" />

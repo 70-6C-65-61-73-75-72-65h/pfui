@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     margin: 108px 0px 70px;
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 70px;
+    }
   }
   &__header {
     font-weight: 700px;
@@ -18,8 +21,8 @@
 
     //  flex: 1 1 auto;
   }
-  //   &__container {
-  //   }
+  &__content {
+  }
 }
 
 .article {

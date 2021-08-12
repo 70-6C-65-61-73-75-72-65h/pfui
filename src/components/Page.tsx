@@ -9,14 +9,12 @@ BrowserRouter;
 export default function Page() {
   return (
     <main className="page">
-      <BrowserRouter>
-        <Switch>
-          <Route exact path={["/", "/main"]} component={Main} />
-          <Route exact path={"/blog"} component={Blog} />
-          <Route exact path={"/work"} component={Works} />
-          <Route exact path={"/work/:id"} component={Work} />
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route exact path={["/", "/main", "/contact"]} component={Main} />
+        <Route exact path={"/blog"} component={Blog} />
+        <Route exact path={"/works/:id"} component={Work} />
+        <Route exact path={"/works"} component={Works} />
+      </Switch>
     </main>
   );
 }

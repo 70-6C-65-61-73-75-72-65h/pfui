@@ -4,6 +4,7 @@ import React, { MouseEventHandler, ReactElement, useContext } from "react";
 import ReactDOM from "react-dom";
 import MenuItem from "@src/components/MenuItem";
 import useFullHeight from "@src/hooks/useFullHeight";
+import { useHistory } from "react-router-dom";
 
 interface MenuItemProps {
   item: {
@@ -21,6 +22,7 @@ interface BurgerProps {
 
 function BurgerMenu() {
   const { menuItems, setOpenPopup } = useContext(AppContext);
+  const history = useHistory();
   return useFullHeight(
     React.forwardRef<HTMLElement>((props, ref) => (
       <nav className="burger" ref={ref}>
@@ -30,7 +32,9 @@ function BurgerMenu() {
               key={index}
               item={item}
               className={"burger"}
-              onClick={() => setOpenPopup(false)}
+              onClick={() => (
+                setOpenPopup(false), history.push(`/${item.link}`)
+              )}
             />
           ))}
         </ul>
